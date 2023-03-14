@@ -1,0 +1,302 @@
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set container width and center it horizontally */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f5f5f5;
+  }
+  
+  /* Header styles */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #008080;
+  }
+  
+  header p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #666;
+  }
+  
+  /* Section styles */
+  section {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+  }
+  
+  section:last-child {
+    border-bottom: none;
+  }
+  
+  section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  section h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #008080;
+    padding-bottom: 5px;
+  }
+  
+  /* List styles */
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  li {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+  }
+  
+  /* Link styles */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media queries */
+  @media only screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+    
+    header h1 {
+      font-size: 30px;
+    }
+    
+    header p {
+      font-size: 18px;
+    }
+    
+    section h2 {
+      font-size: 22px;
+    }
+    
+    section h3 {
+      font-size: 18px;
+    }
+    
+    li {
+      font-size: 14px;
+    }
+  }
+  /* Set background color for odd list items */
+li:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Add hover effect to list items */
+  li:hover {
+    background-color: #e6e6e6;
+  }
+  
+  /* Add box shadow to sections */
+  section {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  }
+  
+  /* Add border to images */
+  img {
+    border: 5px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  }
+  
+  /* Add custom styles for buttons */
+  button {
+    display: inline-block;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: #008080;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  }
+  
+  button:hover {
+    background-color: #005454;
+  }
+  
+  /* Add media query for small screens */
+  @media only screen and (max-width: 400px) {
+    header h1 {
+      font-size: 28px;
+    }
+    
+    header p {
+      font-size: 16px;
+    }
+    
+    section h2 {
+      font-size: 20px;
+    }
+    
+    section h3 {
+      font-size: 16px;
+    }
+    
+    li {
+      font-size: 14px;
+    }
+    
+    button {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  }
+
+  /* Add neon effect to headings */
+h1, h2, h3 {
+    color: #fff;
+    text-shadow: 0px 0px 10px #fff,
+                 0px 0px 20px #fff,
+                 0px 0px 30px #fff,
+                 0px 0px 40px #ff00ff,
+                 0px 0px 70px #ff00ff,
+                 0px 0px 80px #ff00ff,
+                 0px 0px 100px #ff00ff;
+  }
+  
+  /* Add 3D transform to sections */
+  section {
+    transform: perspective(2000px) rotateX(50deg);
+  }
+  
+  /* Add flip transform to images */
+  img {
+    transform: rotateY(180deg);
+    transition: transform 1s ease-in-out;
+  }
+  
+  img:hover {
+    transform: rotateY(0deg);
+  }
+  
+  /* Add background gradient to buttons */
+  button {
+    background: linear-gradient(45deg, #00ffff, #ff00ff, #ffff00);
+    background-size: 200%;
+    transition: background-position 0.5s ease-in-out;
+  }
+  
+  button:hover {
+    background-position: right;
+  }
+  
+  /* Add animation to list items */
+  li {
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  
+  /* Add 3D text shadow to header */
+  header h1 {
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5),
+                 0px 0px 20px rgba(255, 255, 255, 0.5),
+                 0px 0px 30px rgba(255, 255, 255, 0.5),
+                 0px 0px 40px rgba(255, 0, 255, 0.7),
+                 0px 0px 70px rgba(255, 0, 255, 0.7),
+                 0px 0px 80px rgba(255, 0, 255, 0.7),
+                 0px 0px 100px rgba(255, 0, 255, 0.7);
+  }
+  
+  /* Add glitch effect to entire page */
+  body {
+    background-color: #000;
+    animation: glitch 0.5s infinite;
+  }
+  
+  /* Add pulse animation to profile picture */
+.profile-pic {
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Add bouncing animation to skill bars */
+  .skills li span {
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+    animation: bounce 1s ease-in-out infinite;
+  }
+  
+  .skills li:nth-child(1) span {
+    animation-delay: 0s;
+  }
+  
+  .skills li:nth-child(2) span {
+    animation-delay: 0.2s;
+  }
+  
+  .skills li:nth-child(3) span {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
